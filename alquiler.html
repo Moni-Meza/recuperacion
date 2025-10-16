@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler - AutoRent S.A.S.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AutoRent S.A.S.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vehiculos.html">Vehículos</a></li>
+                <li><a href="alquiler.html" class="activo">Alquiler</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="alquiler-contenido">
+    <div class="formulario">
+        <h2>Reserva tu vehículo</h2>
+        <p>Completa el formulario para solicitar tu alquiler.</p>
+
+        <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre"  required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"  required>
+
+            <label for="tipo">Tipo de vehículo:</label>
+            <select id="tipo" name="tipo">
+                <option value="">Selecciona una opción</option>
+                <option>Sedán</option>
+                <option>SUV</option>
+                <option>Compacto</option>
+                <option>De lujo</option>
+            </select>
+
+            <label for="fecha-alquiler">Fecha de alquiler:</label>
+            <input type="date" id="fecha-alquiler" name="fecha-alquiler">
+
+            <label for="fecha-devolucion">Fecha de devolución:</label>
+            <input type="date" id="fecha-devolucion" name="fecha-devolucion">
+
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit">Enviar solicitud</button>
+        </form>
+    </div>
+
+    <div class="imagen-alquiler">
+        <img src="https://energycouncil.com/wp-content/uploads/Autorent.png" alt="Auto en alquiler">
+    </div>
+</section>
+
+
+</body>
+</html>
